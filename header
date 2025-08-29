@@ -1,0 +1,71 @@
+import React from "react";
+import { motion } from "framer-motion";
+
+export default function Portfolio() {
+  return (
+    <div className="min-h-screen bg-gray-50 text-gray-800">
+      {/* Navbar */}
+      <nav className="flex justify-between items-center p-4 shadow-md bg-white sticky top-0 z-50">
+        <h1 className="text-xl font-bold">My Portfolio</h1>
+        <ul className="flex gap-6">
+          <li><a href="#about" className="hover:text-blue-500">About</a></li>
+          <li><a href="#projects" className="hover:text-blue-500">Projects</a></li>
+          <li><a href="#certificate" className="hover:text-blue-500">Certificate</a></li>
+          <li><a href="#contact" className="hover:text-blue-500">Contact</a></li>
+        </ul>
+      </nav>
+
+      {/* About Section */}
+      <section id="about" className="p-10 text-center">
+        <motion.h2 
+          initial={{ opacity: 0, y: -20 }} 
+          animate={{ opacity: 1, y: 0 }} 
+          transition={{ duration: 0.6 }}
+          className="text-3xl font-bold mb-4"
+        >
+          About Me
+        </motion.h2>
+        <p className="max-w-2xl mx-auto text-lg">
+          Hi, I'm [Your Name], a passionate developer specializing in building web and software solutions.
+        </p>
+      </section>
+
+      {/* Projects Section */}
+      <section id="projects" className="p-10 bg-gray-100 text-center">
+        <h2 className="text-3xl font-bold mb-6">Projects</h2>
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="p-6 bg-white rounded-2xl shadow">
+            <h3 className="font-semibold text-xl mb-2">Project One</h3>
+            <p>A short description of your project.</p>
+          </div>
+          <div className="p-6 bg-white rounded-2xl shadow">
+            <h3 className="font-semibold text-xl mb-2">Project Two</h3>
+            <p>A short description of your project.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Certificate Section */}
+      <section id="certificate" className="p-10 text-center">
+        <h2 className="text-3xl font-bold mb-6">Certificates</h2>
+        <ul className="list-disc list-inside max-w-lg mx-auto text-left">
+          <li>Certificate in Web Development - XYZ Academy</li>
+          <li>Data Science Certification - ABC Institute</li>
+        </ul>
+      </section>
+
+      {/* Contact Section */}
+      <section id="contact" className="p-10 bg-gray-100 text-center">
+        <h2 className="text-3xl font-bold mb-6">Contact</h2>
+        <p>Email: <a href="mailto:youremail@example.com" className="text-blue-500">youremail@example.com</a></p>
+        <p>GitHub: <a href="https://github.com/yourusername" target="_blank" className="text-blue-500">github.com/yourusername</a></p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank" className="text-blue-500">linkedin.com/in/yourprofile</a></p>
+      </section>
+
+      {/* Footer */}
+      <footer className="p-4 text-center bg-white shadow mt-6">
+        <p>© {new Date().getFullYear()} My Portfolio. All rights reserved.</p>
+      </footer>
+    </div>
+  );
+}
