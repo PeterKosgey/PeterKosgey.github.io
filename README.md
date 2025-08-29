@@ -23,4 +23,3 @@ This project showcases my skills, experience, and projects as an **IT Executive*
 
 ---
 
-## 📂 Project Structure
