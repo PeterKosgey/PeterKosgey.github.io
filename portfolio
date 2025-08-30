@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Peter Kosgey | Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: #f8fafc;
+    }
+    header {
+      background: #1e293b;
+      padding: 1rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    nav a {
+      margin: 0 15px;
+      color: #38bdf8;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    section {
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+    }
+    h2 {
+      color: #38bdf8;
+      margin-bottom: 1rem;
+    }
+    .card {
+      background: #1e293b;
+      padding: 1rem;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #1e293b;
+      margin-top: 2rem;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Peter Kosgey</h1>
+    <p>Cybersecurity & Programming Enthusiast</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#certificates">Certificates</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About</h2>
+    <div class="card">
+      <p>I am passionate about <strong>cybersecurity</strong> and <strong>programming</strong>, with hands-on experience in penetration testing, ethical hacking, and system security.</p>
+      <p>Tools I use: Kali Linux, Nessus, Burp Suite, Hydra, John the Ripper, Splunk, OpenVPN, Oracle VirtualBox, TryHackMe.</p>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="card">
+      <p>🕵️ Penetration Testing Reports with findings, exploits, and remediation steps.</p>
+      <p>🎯 Capture The Flag (CTF) challenges from TryHackMe.</p>
+      <p>📂 Explore more on <a href="YOUR_GITHUB_LINK" target="_blank">GitHub</a>.</p>
+    </div>
+  </section>
+
+  <section id="certificates">
+    <h2>Certificates</h2>
+    <div class="card">
+      <p>📜 (ISC)² Certified in Cybersecurity (CC)</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="card">
+      <p>📧 Email: <a href="mailto:p.kosgey.karanja@gmail.com">p.kosgey.karanja@gmail.com</a></p>
+      <p>🔗 LinkedIn: <a href="https://www.linkedin.com/in/peter-kosgey-b0aa11101/" target="_blank">linkedin.com/in/peter-kosgey</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Peter Kosgey</p>
+  </footer>
+
+</body>
+</html>
