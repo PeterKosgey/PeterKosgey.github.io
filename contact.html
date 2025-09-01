@@ -5,6 +5,58 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact | Peter Kosgey</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    .card, .feedback-card {
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      margin: 20px auto;
+      max-width: 600px;
+    }
+
+    .card h2, .feedback-card h3 {
+      color: #0077b6;
+      margin-bottom: 15px;
+    }
+
+    .card p a {
+      color: #0077b6;
+      text-decoration: none;
+    }
+
+    .card p a:hover {
+      text-decoration: underline;
+    }
+
+    .feedback-card form label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .feedback-card form input,
+    .feedback-card form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+
+    .feedback-card form button {
+      background: #0077b6;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .feedback-card form button:hover {
+      background: #023e8a;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -26,6 +78,22 @@
       <p>Phone: +254710659280</p>
       <p>LinkedIn: <a href="https://www.linkedin.com/in/peter-kosgey-b0aa11101/" target="_blank">linkedin.com/in/peter-kosgey</a></p>
       <p>GitHub: <a href="https://github.com/peterkosgey" target="_blank">github.com/peterkosgey</a></p>
+    </div>
+
+    <div class="feedback-card">
+      <h3>💬 Send Feedback</h3>
+      <form action="https://formspree.io/f/xandbjzk" method="POST">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="_replyto" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Send</button>
+      </form>
     </div>
   </section>
 
