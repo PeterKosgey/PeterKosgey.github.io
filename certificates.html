@@ -5,6 +5,42 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Certificates | Peter Kosgey</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    .cert-section {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      margin: 20px auto;
+      max-width: 1000px;
+    }
+    .cert-card {
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .cert-card h3 {
+      margin-bottom: 10px;
+      color: #0077b6;
+    }
+    .cert-card a {
+      display: inline-block;
+      margin-top: 10px;
+      color: #0077b6;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .cert-card a:hover {
+      text-decoration: underline;
+    }
+    .cert-img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -20,12 +56,20 @@
   </header>
 
   <section>
-    <div class="card">
-      <h2>📜 My Certificates</h2>
-      <ul>
-        <li><a href="https://arcx.io/verify-certificate?id=f038501e1e1ffd3c5af6f4cef47a9239b526f01f&k=b5c8d01ed77b4b0cbd41c4c3b6f6d195" target="_blank">arcX Cyber Threat Intelligence 101</a></li>
-        <li><a href="https://tryhackme.com/certificate/THM-2GYCKK9SB4" target="_blank">TryHackMe Cybersecurity Certificate</a></li>
-      </ul>
+    <div class="cert-section">
+      <!-- Certificate 1 -->
+      <div class="cert-card">
+        <h3>📜 ISC2 Certified in Cybersecurity</h3>
+        <img src="isc2.png" alt="ISC2 Certificate" class="cert-img">
+        <a href="https://arcx.io/verify-certificate?id=f038501e1e1ffd3c5af6f4cef47a9239b526f01f&k=b5c8d01ed77b4b0cbd41c4c3b6f6d195" target="_blank">View Certificate</a>
+      </div>
+
+      <!-- Certificate 2 -->
+      <div class="cert-card">
+        <h3>🎯 TryHackMe Cybersecurity Certificate</h3>
+        <img src="tryhackme.png" alt="TryHackMe Certificate" class="cert-img">
+        <a href="https://tryhackme.com/certificate/THM-2GYCKK9SB4" target="_blank">View Certificate</a>
+      </div>
     </div>
   </section>
 
