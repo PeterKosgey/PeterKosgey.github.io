@@ -6,28 +6,64 @@
   <title>Experience | Peter Kosgey</title>
   <link rel="stylesheet" href="style.css">
   <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    header {
+      background: #0077b6;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    header nav a {
+      color: #fff;
+      margin: 0 12px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    header nav a.active {
+      text-decoration: underline;
+    }
     .experience-section {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 20px;
-      margin: 20px auto;
+      margin: 40px auto;
       max-width: 1000px;
+      padding: 0 20px;
     }
     .experience-card {
       background: #fff;
-      padding: 20px;
+      padding: 25px;
       border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .experience-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.15);
     }
     .experience-card h3 {
       color: #0077b6;
-      margin-bottom: 10px;
+      margin-bottom: 15px;
     }
     .experience-card ul {
       padding-left: 18px;
     }
     .experience-card li {
-      margin-bottom: 8px;
+      margin-bottom: 10px;
+      line-height: 1.5;
+    }
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #0077b6;
+      color: #fff;
+      margin-top: 40px;
     }
   </style>
 </head>
@@ -50,12 +86,12 @@
       <div class="experience-card">
         <h3>🖥 IT Systems & Infrastructure</h3>
         <ul>
-          <li>Server & Firewall Management – FortiGate 90D, Windows Server 2012/2022</li>
-          <li>Database Administration – MySQL</li>
-          <li>Computer hardware & software maintenance</li>
-          <li>Daily data backups & disaster recovery</li>
-          <li>Camera surveillance & troubleshooting</li>
-          <li>Weighbridge System Management</li>
+          <li>Managed servers and firewalls: FortiGate 90D, Windows Server 2012/2022</li>
+          <li>Administered MySQL databases, ensuring data integrity and availability</li>
+          <li>Performed computer hardware and software maintenance across the organization</li>
+          <li>Conducted daily data backups and implemented disaster recovery strategies</li>
+          <li>Installed, monitored, and troubleshooted camera surveillance systems</li>
+          <li>Managed weighbridge system operations for accurate measurements and reporting</li>
         </ul>
       </div>
 
@@ -63,9 +99,13 @@
       <div class="experience-card">
         <h3>📊 Business Applications & ERP</h3>
         <ul>
-          <li>ERP System support – Hansaworld ERP</li>
-          <li>Payroll & Biometric Support</li>
-          <li>Plant machinery software maintenance & troubleshooting</li>
+          <li>Supported and optimized Hansaworld ERP system for seamless business operations</li>
+          <li>Managed payroll and biometric systems, ensuring accurate employee records and timely processing</li>
+          <li>Maintained and troubleshooted plant machinery software to minimize downtime</li>
+          <li>Integrated ERP modules with other business applications for improved workflow</li>
+          <li>Provided user training and technical support for ERP and related applications</li>
+          <li>Generated reports and analytics to support management decisions</li>
+          <li>Implemented software updates and patches to enhance system security and performance</li>
         </ul>
       </div>
 
@@ -73,10 +113,12 @@
       <div class="experience-card">
         <h3>🚀 IT Leadership & Strategy</h3>
         <ul>
-          <li>Manage daily operations of the IT department</li>
-          <li>Offer suggestions for upgrades & improvements</li>
-          <li>Responsible for technological direction of the companies</li>
-          <li>Propose hardware/software solutions for business objectives</li>
+          <li>Oversaw daily IT operations to ensure smooth business functionality</li>
+          <li>Recommended and implemented hardware and software upgrades for efficiency</li>
+          <li>Directed company technology strategies in alignment with business objectives</li>
+          <li>Proposed and deployed IT solutions to support business growth and objectives</li>
+          <li>Led IT projects and coordinated cross-departmental technology initiatives</li>
+          <li>Developed policies and procedures to strengthen IT governance and security</li>
         </ul>
       </div>
     </div>
@@ -87,3 +129,4 @@
   </footer>
 </body>
 </html>
+
