@@ -20,13 +20,27 @@
       margin-bottom: 15px;
     }
 
-    .card p a {
+    .card p, .card a {
+      font-size: 1rem;
+      line-height: 1.5;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+    }
+
+    .card a {
       color: #0077b6;
       text-decoration: none;
     }
 
-    .card p a:hover {
+    .card a:hover {
       text-decoration: underline;
+    }
+
+    .card img {
+      width: 24px;
+      height: 24px;
+      margin-right: 8px;
     }
 
     .feedback-card form label {
@@ -74,10 +88,22 @@
   <section>
     <div class="card">
       <h2>📬 Get in Touch</h2>
-      <p>Email: <a href="mailto:p.kosgey.karanja@gmail.com">p.kosgey.karanja@gmail.com</a></p>
-      <p>Phone: +254710659280</p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/peter-kosgey-b0aa11101/" target="_blank">linkedin.com/in/peter-kosgey</a></p>
-      <p>GitHub: <a href="https://github.com/peterkosgey" target="_blank">github.com/peterkosgey</a></p>
+      <p>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Mail_%28iOS%29.svg" alt="Email Icon">
+        Email: <a href="mailto:p.kosgey.karanja@gmail.com">p.kosgey.karanja@gmail.com</a>
+      </p>
+      <p>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Phone_font_awesome.svg" alt="Phone Icon">
+        Phone: +254710659280
+      </p>
+      <p>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/01/LinkedIn_Logo.svg" alt="LinkedIn Icon">
+        LinkedIn: <a href="https://www.linkedin.com/in/peter-kosgey-b0aa11101/" target="_blank">linkedin.com/in/peter-kosgey</a>
+      </p>
+      <p>
+        <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Icon">
+        GitHub: <a href="https://github.com/peterkosgey" target="_blank">github.com/peterkosgey</a>
+      </p>
     </div>
 
     <div class="feedback-card">
