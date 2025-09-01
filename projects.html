@@ -5,20 +5,69 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Projects | Peter Kosgey</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    /* Section styling */
+    section {
+      padding: 2rem;
+      margin: 2rem auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      max-width: 900px;
+    }
+
+    /* Cybersecurity styling */
+    .cyber {
+      background: #e8f0fe;
+      border-left: 6px solid #1a73e8;
+    }
+    .cyber h2 {
+      color: #1a73e8;
+    }
+
+    /* Industrial styling */
+    .industrial {
+      background: #fef7e0;
+      border-left: 6px solid #fbbc04;
+    }
+    .industrial h2 {
+      color: #ea8600;
+    }
+
+    /* Cards */
+    .card {
+      background: white;
+      margin: 1rem 0;
+      padding: 1rem 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    }
+
+    .card h3 {
+      margin-top: 0;
+    }
+
+    nav a.active {
+      font-weight: bold;
+      color: #1a73e8;
+    }
+  </style>
 </head>
 <body>
   <header>
     <h1>Projects</h1>
     <nav>
-      <a href="index.html">About</a>
-      <a href="projects.html">Projects</a>
+      <a href="home.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html" class="active">Projects</a>
       <a href="certificates.html">Certificates</a>
       <a href="contact.html">Contact</a>
     </nav>
   </header>
 
-  <section>
-    <h2>💻 My Projects</h2>
+  <!-- Cybersecurity Projects -->
+  <section class="cyber">
+    <h2>💻 Cybersecurity Projects</h2>
+
     <div class="card">
       <h3>🔐 Penetration Testing Reports</h3>
       <p>Documented findings, exploits, and remediation steps from professional pentests.</p>
@@ -32,8 +81,23 @@
     </div>
   </section>
 
+  <!-- Industrial Projects -->
+  <section class="industrial">
+    <h2>🏭 Industrial Engineering Projects</h2>
+
+    <div class="card">
+      <h3>Bakex Millers & Broadway Bakery</h3>
+      <ul>
+        <li>Part of the team that commissioned a <strong>state-of-the-art flour mill</strong> at <strong>Bakex Millers Thika</strong> in 2017 from the <strong>Buhler Group, Switzerland</strong>. The mill produces an average of <strong>350MT of flour per day</strong>.</li>
+        <li>Part of the team that commissioned a <strong>state-of-the-art bread plant</strong> at <strong>Broadway Bakery Thika</strong> in 2020 from the <strong>Kaak Group, Netherlands</strong> — the first of its kind in Kenya with a capacity of over <strong>8,000 loaves per hour</strong>. The project also included <strong>Flour Silos from Altinbilek, Turkey</strong>.</li>
+        <li>Part of the team that recently commissioned a <strong>second Kaak Plant</strong> at <strong>Broadway Bakery Thika</strong> in 2023 along with an additional set of <strong>flour silos from Altinbilek, Turkey</strong>.</li>
+      </ul>
+    </div>
+  </section>
+
   <footer>
     <p>© 2025 Peter Kosgey</p>
   </footer>
 </body>
 </html>
+
