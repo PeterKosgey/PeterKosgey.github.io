@@ -5,10 +5,53 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact | Peter Kosgey</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    .contact-section {
+      max-width: 600px;
+      margin: 30px auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    label {
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    input, textarea {
+      margin-top: 5px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1rem;
+      width: 100%;
+    }
+    textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+    button {
+      margin-top: 20px;
+      padding: 12px;
+      background: #0077b6;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+    button:hover {
+      background: #005f8a;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <h1>Contact</h1>
+    <h1>Contact Me</h1>
     <nav>
       <a href="home.html">Home</a>
       <a href="index.html">About</a>
@@ -19,14 +62,23 @@
     </nav>
   </header>
 
-  <section>
-    <div class="card">
-      <h2>📬 Get in Touch</h2>
-      <p>Email: <a href="mailto:p.kosgey.karanja@gmail.com">p.kosgey.karanja@gmail.com</a></p>
-      <p>Phone: +254710659280</p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/peter-kosgey-b0aa11101/" target="_blank">linkedin.com/in/peter-kosgey</a></p>
-      <p>GitHub: <a href="https://github.com/peterkosgey" target="_blank">github.com/peterkosgey</a></p>
-    </div>
+  <section class="contact-section">
+    <h2>📬 Get in Touch</h2>
+    <p>Feel free to send me a message directly through this form:</p>
+
+    <!-- Feedback Form -->
+    <form action="mailto:p.kosgey.karanja@gmail.com" method="POST" enctype="text/plain">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+      <label for="email">Your Email</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+      <label for="message">Your Message</label>
+      <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
   </section>
 
   <footer>
