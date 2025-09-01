@@ -3,119 +3,106 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact | Peter Kosgey</title>
+  <title>Certificates | Peter Kosgey</title>
   <link rel="stylesheet" href="style.css">
   <style>
-    /* Contact Form Specific Styling */
-    .contact-section {
-      display: flex;
-      flex-direction: column;
+    .cert-section {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 20px;
-      margin: 30px auto;
-      max-width: 600px;
+      margin: 20px auto;
+      max-width: 1000px;
     }
 
-    .contact-card {
+    .cert-card {
       background: #fff;
-      padding: 25px;
+      padding: 20px;
       border-radius: 12px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.1);
       text-align: center;
+      transition: all 0.3s ease;
     }
 
-    .contact-card h2 {
+    .cert-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+
+    .cert-card h3 {
+      margin-bottom: 10px;
       color: #0077b6;
-      margin-bottom: 15px;
     }
 
-    .contact-card a {
+    .cert-card a {
       display: inline-block;
-      margin: 0 10px 10px 10px;
+      margin-top: 10px;
       color: #0077b6;
       text-decoration: none;
       font-weight: bold;
     }
 
-    .contact-card a:hover {
+    .cert-card a:hover {
       text-decoration: underline;
     }
 
-    form label {
-      display: block;
-      margin-top: 10px;
-      font-weight: bold;
-      color: #333;
-      text-align: left;
-    }
-
-    form input, form textarea {
-      width: 100%;
-      padding: 10px;
-      margin-top: 5px;
-      margin-bottom: 15px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      font-size: 15px;
-      box-sizing: border-box;
-    }
-
-    form button {
-      padding: 12px 20px;
-      background-color: #0077b6;
-      color: white;
-      border: none;
-      border-radius: 8px;
-      font-size: 16px;
-      cursor: pointer;
-      transition: 0.3s;
-    }
-
-    form button:hover {
-      background: #023e8a;
+    .coming-soon {
+      color: #888;
+      font-style: italic;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Contact Me</h1>
+    <h1>Certificates</h1>
     <nav>
       <a href="home.html">Home</a>
       <a href="index.html">About</a>
       <a href="experience.html">Experience</a>
       <a href="projects.html">Projects</a>
-      <a href="certificates.html">Certificates</a>
-      <a href="contact.html" class="active">Contact</a>
+      <a href="certificates.html" class="active">Certificates</a>
+      <a href="contact.html">Contact</a>
     </nav>
   </header>
 
-  <section class="contact-section">
-    <!-- Social Links -->
-    <div class="contact-card">
-      <h2>🌐 Connect With Me</h2>
-      <a href="https://www.linkedin.com/in/peter-kosgey-b0aa11101/" target="_blank">LinkedIn</a>
-      <a href="https://github.com/peterkosgey" target="_blank">GitHub</a>
-      <a href="mailto:p.kosgey.karanja@gmail.com">Email</a>
-    </div>
+  <section>
+    <div class="cert-section">
+      <!-- Verified Certificate 1 -->
+      <div class="cert-card">
+        <h3>📜 arcX Cyber Threat Intelligence 101</h3>
+        <a href="https://arcx.io/verify-certificate?id=f038501e1e1ffd3c5af6f4cef47a9239b526f01f&k=b5c8d01ed77b4b0cbd41c4c3b6f6d195" target="_blank">Verify Certificate</a>
+      </div>
 
-    <!-- Contact Form -->
-    <div class="contact-card">
-      <h2>Send Me a Message</h2>
-      <form action="https://formspree.io/f/xandbjzk" method="POST">
-        <label for="name">Your Name</label>
-        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+      <!-- Verified Certificate 2 -->
+      <div class="cert-card">
+        <h3>🎯 TryHackMe Cybersecurity Certificate</h3>
+        <a href="https://tryhackme.com/certificate/THM-2GYCKK9SB4" target="_blank">Verify Certificate</a>
+      </div>
 
-        <label for="email">Your Email</label>
-        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      <!-- Microsoft Azure Fundamentals -->
+      <div class="cert-card">
+        <h3>☁️ Microsoft Certified: Azure Fundamentals</h3>
+      </div>
 
-        <label for="message">Your Message</label>
-        <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+      <!-- Cisco CCNA -->
+      <div class="cert-card">
+        <h3>🌐 Cisco CCNA – Networking & Security</h3>
+      </div>
 
-        <input type="hidden" name="_subject" value="New message from portfolio website">
-        <input type="hidden" name="_captcha" value="true">
-        <input type="hidden" name="_next" value="https://peter-kosgey-github-io.vercel.app/thank-you.html">
+      <!-- Google IT Support -->
+      <div class="cert-card">
+        <h3>💻 Google IT Support Professional Certificate</h3>
+      </div>
 
-        <button type="submit" class="btn">Send Message</button>
-      </form>
+      <!-- ITIL Foundation -->
+      <div class="cert-card">
+        <h3>📈 ITIL Foundation Certificate in IT Service Management</h3>
+      </div>
+
+      <!-- Placeholder for future certs -->
+      <div class="cert-card">
+        <h3>🚀 More Coming Soon</h3>
+        <p class="coming-soon">New certifications are in progress...</p>
+      </div>
     </div>
   </section>
 
