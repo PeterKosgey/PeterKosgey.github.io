@@ -107,7 +107,7 @@
       </p>
 
       <p>
-        <img src="https://i.pinimg.com/736x/87/b1/2a/87b12a1e8a11f6c1264a237c5f08c195.jpg" alt="Phone Icon">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/8a/Phone_icon.svg" alt="Phone Icon">
         <strong>Phone:</strong> +254710659280
       </p>
     </div>
@@ -125,6 +125,9 @@
         <label for="message">Message</label>
         <textarea id="message" name="message" rows="5" required></textarea>
 
+        <!-- Redirect to home with thank-you -->
+        <input type="hidden" name="_next" value="home.html?submitted=true">
+
         <button type="submit">Send</button>
       </form>
     </div>
@@ -133,5 +136,13 @@
   <footer>
     <p>© 2025 Peter Kosgey</p>
   </footer>
+
+  <!-- Optional thank-you alert on home page -->
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    if (params.get('submitted') === 'true') {
+      alert('Thank you for your feedback!');
+    }
+  </script>
 </body>
 </html>
