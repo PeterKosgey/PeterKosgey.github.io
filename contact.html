@@ -5,32 +5,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact | Peter Kosgey</title>
   <style>
-    /* Base styling to match index.html */
+    /* Base styling to match certificates page */
     body {
       font-family: Arial, sans-serif;
-      background-color: #0b1120; /* Dark/navy background */
-      color: #ffffff; /* White text */
+      background-color: #f4f4f4;
       margin: 0;
       padding: 0;
       display: flex;
       justify-content: center;
       align-items: flex-start;
       min-height: 100vh;
-      padding-top: 50px;
+      padding: 50px 20px;
     }
 
     .container {
-      background-color: #1c1f38; /* Slightly lighter card */
+      background-color: #ffffff;
       padding: 40px;
       border-radius: 10px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
       width: 100%;
       max-width: 500px;
     }
 
     h1, h2 {
       text-align: center;
-      color: #ffffff;
+      color: #333333;
     }
 
     h1 {
@@ -38,4 +37,100 @@
       margin-bottom: 30px;
     }
 
-    h2
+    h2 {
+      margin-bottom: 20px;
+    }
+
+    .connect {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .connect a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #007bff; /* Accent color matching certificates page */
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    .connect a:hover {
+      color: #0056b3;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+      color: #333333;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+      box-sizing: border-box;
+      background-color: #f9f9f9;
+      color: #333333;
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+      color: #888888;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 18px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Connect With Me Section -->
+    <div class="connect">
+      <h2>🌐 Connect With Me</h2>
+      <a href="https://www.linkedin.com/in/peter-kosgey" target="_blank">LinkedIn</a>
+      <a href="https://github.com/peterkosgey" target="_blank">GitHub</a>
+      <a href="mailto:p.kosgey.karanja@gmail.com">Email</a>
+    </div>
+
+    <h1>Contact Me</h1>
+
+    <!-- Contact Form -->
+    <form action="https://formspree.io/f/xandbjzk" method="POST">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+      <label for="email">Your Email</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+      <label for="message">Your Message</label>
+      <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+
+      <!-- Formspree hidden fields -->
+      <input type="hidden" name="_subject" value="New message from portfolio website">
+      <input type="hidden" name="_captcha" value="true">
+      <input type="hidden" name="_next" value="https://peter-kosgey-github-io.vercel.app/thank-you.html">
+
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+
+</body>
+</html>
